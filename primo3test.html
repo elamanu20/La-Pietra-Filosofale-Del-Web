@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title> La Pietra Filosofale del Web </title>
+	
+	
+	<link rel="stylesheet" href="primotest.css">
+	<link rel="stylesheet" href="audio.css">
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+	<style>
+        .result {
+            color: moccasin; /* Cambia il colore a tuo piacimento */
+            font-size: 50px; /* Modifica la dimensione del font se necessario */
+            margin-top: 20px; /* Aggiungi margine superiore per distanziare dal quiz */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+        <ul>
+            <li> <a href="index.html"> Home</a></li>
+            <li><a href="provamappaaa.html">Mappa Interattiva</a></li>
+           <li><a href="pozioni.html">Pozioni</a></li>
+        </ul>
+</nav>
+
+<audio autoplay controls loop>
+    <source src="testmusic.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+        <h2>Primo Esame </h2>
+        <div id="quiz">
+		 <form id="quiz-form">
+        <!-- Domande -->
+        <div class="question">
+            <p>1. Chi uccide Nagini, l’ultimo Horcrux?</p>
+            <label><input type="radio" name="q1" value="a"> Ron Weasley</label><br>
+            <label><input type="radio" name="q1" value="b"> Hermione Granger</label><br>
+            <label><input type="radio" name="q1" value="c"> Neville Paciock</label><br>
+            <label><input type="radio" name="q1" value="d"> Harry Potter</label>
+        </div>
+
+        <div class="question">
+            <p>2. Dove viene distrutta la diadema di Corvonero?</p>
+            <label><input type="radio" name="q2" value="a"> La Foresta Proibita</label><br>
+            <label><input type="radio" name="q2" value="b"> La Sala Grande</label><br>
+            <label><input type="radio" name="q2" value="c"> La Camera dei Segreti</label><br>
+            <label><input type="radio" name="q2" value="d"> La Stanza delle Necessità</label>
+        </div>
+
+        <div class="question">
+            <p>3. Quale personaggio affronta e sconfigge Bellatrix Lestrange?</p>
+            <label><input type="radio" name="q3" value="a"> Ginny Weasley</label><br>
+            <label><input type="radio" name="q3" value="b"> Molly Weasley</label><br>
+            <label><input type="radio" name="q3" value="c"> Hermione Granger</label><br>
+            <label><input type="radio" name="q3" value="d"> Luna Lovegood</label>
+        </div>
+
+        <div class="question">
+            <p>4. Quale atto di Voldemort permette a Harry di sopravvivere nella Foresta Proibita?</p>
+            <label><input type="radio" name="q4" value="a"> Il sacrificio di Lily Potter</label><br>
+            <label><input type="radio" name="q4" value="b"> L’uso della Bacchetta di Sambuco</label><br>
+            <label><input type="radio" name="q4" value="c"> Il legame con Nagini</label><br>
+            <label><input type="radio" name="q4" value="d"> Il sacrificio di Piton</label>
+        </div>
+		
+		<div class="question">
+            <p>5. Cosa porta alla morte definitiva di Voldemort?</p>
+            <label><input type="radio" name="q5" value="a"> L’uccisione di Nagini</label><br>
+            <label><input type="radio" name="q5" value="b"> Un duello con Silente</label><br>
+            <label><input type="radio" name="q5" value="c"> Un incantesimo che rimbalza su di lui</label><br>
+            <label><input type="radio" name="q5" value="d"> La distruzione della Coppa di Tassorosso</label>
+        </div>
+		
+
+
+        <!-- Pulsante per calcolare il risultato -->
+        <button class="button" type= "button" onclick="checkAnswers(event)">Invia le Risposte</button>
+		</form>
+    </div>
+
+    <!-- Risultato -->
+    <div id="result" class="result"></div>
+	<button id="continue-button" class="button" style="display: none;" onclick="window.location.href='seconda3lezione.html'">Procedi alla Seconda Lezione</button>
+
+    <script src="primo3test.js"></script>
+
+</body>
+
+</html>

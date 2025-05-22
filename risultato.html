@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Risultato del Test</title>
+    <link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link rel="stylesheet" href="risultato.css">
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+</head>
+<body>
+
+<nav>
+        <ul>
+            <li> <a href="index.html"> Home</a></li>
+            <li><a href="#">Mappa Interattiva</a></li>
+            <li><a href="pozioni.html">Pozioni</a></li>
+        </ul>
+</nav>
+
+	
+    <h1>Risultato del Test di Smistamento</h1>ù
+	<div class="container">
+		<div id="result"class="house-name"></div>
+		<a href="Lezioni.html" class="bottone">Vai alle Lezioni</a>
+	</div>
+
+    <script>
+        // Funzione per ottenere il parametro dalla query string
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // Mostra il risultato
+    const house = getQueryParam('house');
+    const resultDiv = document.getElementById('result');
+
+    const audioMap = {
+        'Grifondoro': 'Audio/Grifondoro.mp3',
+        'Serpeverde': 'Audio/Serpeverde.mp3',
+        'Corvonero': 'Audio/Corvonero.mp3',
+        'Tassorosso': 'Audio/Tassorosso.mp3'
+    };
+
+    if (house && audioMap[house]) {
+        resultDiv.textContent = `La tua casa è: ${house}!`;
+
+        // Crea un elemento audio
+        const audio = document.createElement('audio');
+        audio.controls = true;
+        audio.src = audioMap[house];
+        audio.autoplay = true;
+        audio.className = 'audio-player'; // per eventuali stili
+
+        // Aggiungilo alla pagina
+        document.body.appendChild(audio);
+    } else {
+        resultDiv.textContent = "Nessun risultato trovato.";
+    }
+
+</script>
+
+</body>
+</html>

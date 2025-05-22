@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title> La Pietra Filosofale del Web </title>
+	
+	
+	<link rel="stylesheet" href="primotest.css">
+	<link rel="stylesheet" href="audio.css">
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+	<style>
+        .result {
+            color: moccasin; /* Cambia il colore a tuo piacimento */
+            font-size: 50px; /* Modifica la dimensione del font se necessario */
+            margin-top: 20px; /* Aggiungi margine superiore per distanziare dal quiz */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+        <ul>
+           <li> <a href="index.html"> Home</a></li>
+            <li><a href="provamappaaa.html">Mappa Interattiva</a></li>
+           <li><a href="pozioni.html">Pozioni</a></li>
+        </ul>
+</nav>
+
+<audio autoplay controls loop>
+    <source src="testmusic.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+        <h2>Terzo Esame </h2>
+        <div id="quiz">
+		 <form id="quiz-form">
+        <!-- Domande -->
+        <div class="question">
+            <p>1. Perché Harry forma l’Esercito di Silente?</p>
+            <label><input type="radio" name="q1" value="a"> Per ribellarsi contro Voldemort</label><br>
+            <label><input type="radio" name="q1" value="b"> Per combattere i Mangiamorte subito</label><br>
+            <label><input type="radio" name="q1" value="c"> Per insegnare Difesa Contro le Arti Oscure agli studenti</label><br>
+            <label><input type="radio" name="q1" value="d"> Per impressionare Cho Chang</label>
+        </div>
+
+        <div class="question">
+            <p>2. Dove si riunisce l’Esercito di Silente?</p>
+            <label><input type="radio" name="q2" value="a"> Nella Stanza delle Necessità</label><br>
+            <label><input type="radio" name="q2" value="b"> Nella Torre di Grifondoro</label><br>
+            <label><input type="radio" name="q2" value="c"> Nella biblioteca</label><br>
+            <label><input type="radio" name="q2" value="d"> Nella Sala Grande</label>
+        </div>
+
+        <div class="question">
+            <p>3. Chi sono i creatori della Mappa del Malandrino?</p>
+            <label><input type="radio" name="q3" value="a"> Harry, Ron, Hermione e Neville</label><br>
+            <label><input type="radio" name="q3" value="b"> James Potter, Sirius Black, Remus Lupin e Peter Minus</label><br>
+            <label><input type="radio" name="q3" value="c"> Albus Silente e i fondatori di Hogwarts</label><br>
+            <label><input type="radio" name="q3" value="d"> Fred e George Weasley</label>
+        </div>
+
+        <div class="question">
+            <p>4. Qual è lo scopo dell’Ordine della Fenice?</p>
+            <label><input type="radio" name="q4" value="a"> Difendere Hogwarts dagli studenti</label><br>
+            <label><input type="radio" name="q4" value="b"> Proteggere il mondo magico da Voldemort e i Mangiamorte</label><br>
+            <label><input type="radio" name="q4" value="c"> Addestrare Harry a combattere</label><br>
+            <label><input type="radio" name="q4" value="d"> Distruggere tutti gli Horcrux</label>
+        </div>
+		
+		<div class="question">
+            <p>5. Come si attiva la Mappa del Malandrino?</p>
+            <label><input type="radio" name="q5" value="a"> Pronunciando “Fatto il misfatto.”</label><br>
+            <label><input type="radio" name="q5" value="b"> Con un incantesimo segreto</label><br>
+            <label><input type="radio" name="q5" value="c"> Usando la bacchetta di Sambuco</label><br>
+            <label><input type="radio" name="q5" value="d"> Dicendo “Giuro solennemente di non avere buone intenzioni.”
+</label>
+        </div>
+		
+
+
+        <!-- Pulsante per calcolare il risultato -->
+        <button class="button" type= "button" onclick="checkAnswers(event)">Invia le Risposte</button>
+		</form>
+    </div>
+
+    <!-- Risultato -->
+    <div id="result" class="result"></div>
+	<button id="continue-button" class="button" style="display: none;" onclick="window.location.href='quarta3lezione.html'">Procedi alla Quarta Lezione</button>
+
+    <script src="terzo3test.js"></script>
+
+</body>
+
+</html>

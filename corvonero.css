@@ -1,0 +1,67 @@
+
+
+.result-container {
+    display: flex;
+    align-items: center; /* Allinea verticalmente immagine e testo */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    margin-top: 100px;
+    font-family: 'New Rocker';
+    gap: 20px; /* Aggiungi uno spazio tra l'immagine e il testo */
+}
+
+.house-image {
+    width: 350px; /* Imposta la larghezza dell'immagine */
+    height: auto; /* Mantieni le proporzioni dell'immagine */
+}
+
+.text {
+    text-align: left; /* Allinea il testo a sinistra */
+    max-width: 600px; /* Imposta una larghezza massima per il testo, così non diventa troppo largo */
+}
+
+.result-container h1 {
+    color: darkblue;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.result-container .house {
+    color: royalblue;
+    font-weight: bold;
+}
+
+.result-container button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'New Rocker';
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.result-container button:hover {
+    background-color: royalblue;
+    transform: translateY(-2px);
+}
+
+audio {
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: royalblue;
+    padding: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 20%; /* Imposta la larghezza del lettore audio */
+    max-width: 500px; /* Limita la larghezza massima del lettore */
+}
+
+audio::-webkit-media-controls {
+    background-color: darkblue;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: royalblue;
+}

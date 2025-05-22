@@ -1,0 +1,38 @@
+nav {
+    position: fixed; /* Rende il menu fisso in alto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-trasparente */
+    padding: 10px 20px; /* Padding per il menu */
+    z-index: 1000; /* Mantiene il menu sopra altri elementi */
+}
+
+nav ul {
+    list-style-type: none; /* Rimuove i punti dalla lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Dispone gli elementi in orizzontale */
+	justify-content: center;
+}
+
+nav li {
+    margin-right: 50px; /* Spazio tra gli elementi del menu */
+    color: white; /* Colore del testo */
+    font-family: 'New Rocker';
+}
+
+nav li.active {
+    font-weight: bold; /* Evidenzia la voce attiva */
+	color: navajowhite;
+}
+
+nav a {
+    color: white; /* Colore dei link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+	cursor: url('https://cur.cursors-4u.net/others/oth-3/oth256.cur'), auto;
+}
+
+nav a:hover {
+    cursor: url('https://cur.cursors-4u.net/others/oth-3/oth256.cur'), auto; /* Cursore diverso al passaggio del mouse */
+}

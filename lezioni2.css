@@ -1,0 +1,92 @@
+* {
+    cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+}
+
+body {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/148/377/148/abstract-gradient-wallpaper-preview.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  padding-top: 0;
+
+}
+nav {
+    position: fixed; /* Rende il menu fisso in alto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-trasparente */
+    padding: 10px 20px; /* Padding per il menu */
+    z-index: 1000; /* Mantiene il menu sopra altri elementi */
+}
+
+nav ul {
+    list-style-type: none; /* Rimuove i punti dalla lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Dispone gli elementi in orizzontale */
+	justify-content: center;
+}
+
+nav li {
+    margin-right: 50px; /* Spazio tra gli elementi del menu */
+    color: white; /* Colore del testo */
+    font-family: 'New Rocker';
+}
+
+nav li.active {
+    font-weight: bold; /* Evidenzia la voce attiva */
+	color: navajowhite;
+}
+
+nav a {
+    color: white; /* Colore dei link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+	cursor: url('https://cur.cursors-4u.net/others/oth-3/oth256.cur'), auto;
+}
+
+nav a:hover {
+    cursor: url('https://cur.cursors-4u.net/others/oth-3/oth256.cur'), auto; /* Cursore diverso al passaggio del mouse */
+}
+
+h1 {
+	color: navajowhite;
+	margin-left:50px;
+	margin-bottom:20px;
+	font-family: 'New Rocker';
+	font-size: 40px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+	
+h2 {
+	color: moccasin;
+	margin-left:50px;
+	margin-bottom:20px;
+	font-family: 'New Rocker';
+	font-size: 30px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+	
+h3 {
+	color: moccasin;
+	margin-left:50px;
+	margin-bottom:20px;
+	font-family: 'New Rocker';
+	font-size: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+
+p { 
+	font-family: 'Abhaya Libre';
+	color: 	mistyrose;
+	margin-top:30px;
+	margin-left:100px;
+	font-size: 20px;
+	
+}
+
+

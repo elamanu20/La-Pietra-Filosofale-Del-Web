@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title> La Pietra Filosofale del Web </title>
+	
+	
+	<link rel="stylesheet" href="primotest.css">
+	<link rel="stylesheet" href="audio.css">
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+	<style>
+        .result {
+            color: moccasin; /* Cambia il colore a tuo piacimento */
+            font-size: 50px; /* Modifica la dimensione del font se necessario */
+            margin-top: 20px; /* Aggiungi margine superiore per distanziare dal quiz */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+        <ul>
+            <li> <a href="index.html"> Home</a></li>
+            <li><a href="provamappaaa.html">Mappa Interattiva</a></li>
+            <li><a href="pozioni.html">Pozioni</a></li>
+        </ul>
+</nav>
+
+<audio autoplay controls loop>
+    <source src="testmusic.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+        <h2>Primo Esame </h2>
+        <div id="quiz">
+		 <form id="quiz-form">
+        <!-- Domande -->
+        <div class="question">
+            <p>1. Qual è l’effetto della Felix Felicis?</p>
+            <label><input type="radio" name="q1" value="a"> Trasforma chi la beve in un animale</label><br>
+            <label><input type="radio" name="q1" value="b"> Dona un periodo di estrema fortuna</label><br>
+            <label><input type="radio" name="q1" value="c"> Permette di respirare sott’acqua</label><br>
+            <label><input type="radio" name="q1" value="d"> Fa innamorare chi la beve</label>
+        </div>
+
+        <div class="question">
+            <p>2. Quale ingrediente è necessario per preparare il Polisucco?</p>
+            <label><input type="radio" name="q2" value="a"> Sangue di Unicorno</label><br>
+            <label><input type="radio" name="q2" value="b"> Fagioli Sopoforici</label><br>
+            <label><input type="radio" name="q2" value="c"> Crisopa</label><br>
+            <label><input type="radio" name="q2" value="d"> Pietre Lunari</label>
+        </div>
+
+        <div class="question">
+            <p>3. Dove si svolgono le lezioni di Pozioni a Hogwarts?</p>
+            <label><input type="radio" name="q3" value="a"> Nella Torre di Astronomia</label><br>
+            <label><input type="radio" name="q3" value="b"> Nei Sotterranei</label><br>
+            <label><input type="radio" name="q3" value="c"> Nella Sala Grande</label><br>
+            <label><input type="radio" name="q3" value="d"> Nella Stanza delle Necessità</label>
+        </div>
+
+        <div class="question">
+            <p>4. Qual è l’ingrediente principale del Draught della Morte Vivente?</p>
+            <label><input type="radio" name="q4" value="a"> Radice di Mandragola</label><br>
+            <label><input type="radio" name="q4" value="b"> Aculei di Porco Spino</label><br>
+            <label><input type="radio" name="q4" value="c"> Fagioli Sopoforici</label><br>
+            <label><input type="radio" name="q4" value="d"> Bilis di Armadillo</label>
+        </div>
+		
+		<div class="question">
+            <p>5. Che odore ha l’Amortentia?</p>
+            <label><input type="radio" name="q5" value="a"> Odore neutro</label><br>
+            <label><input type="radio" name="q5" value="b"> Odore unico per ogni persona </label><br>
+            <label><input type="radio" name="q5" value="c"> Odore di erba fresca</label><br>
+            <label><input type="radio" name="q5" value="d"> Odore dolce e floreale</label>
+        </div>
+
+
+        <!-- Pulsante per calcolare il risultato -->
+        <button class="button" type= "button" onclick="checkAnswers(event)">Invia le Risposte</button>
+		</form>
+    </div>
+
+    <!-- Risultato -->
+    <div id="result" class="result"></div>
+	<button id="continue-button" class="button" style="display: none;" onclick="window.location.href='seconda2lezione.html'">Procedi alla Seconda Lezione!</button>
+
+    <script src="primo2test.js"></script>
+            
+
+</body>
+
+</html>

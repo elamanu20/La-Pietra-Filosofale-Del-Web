@@ -1,0 +1,31 @@
+* {
+    cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+}
+.contenitore-certificato {
+  display: flex; /* Utilizziamo Flexbox per centrare l'immagine */
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente (se il contenitore ha un'altezza definita) */
+  min-height: 100vh; /* Assicura che il contenitore occupi almeno l'altezza della viewport */
+  background-color: #f0f0f0; /* Un colore di sfondo leggero per la pagina */
+  padding: 20px; /* Aggiunge un po' di spazio intorno al certificato */
+}
+
+/* Stili per l'immagine (se usi il tag <img>) */
+.contenitore-certificato img {
+  display: block; /* Assicura che l'immagine si comporti come un elemento di blocco */
+  max-width: 90%; /* Imposta una larghezza massima per l'immagine (puoi regolarla) */
+  height: auto;    /* Mantiene le proporzioni */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Aggiunge un leggero effetto ombra */
+}
+
+/* Stili per l'immagine come sfondo del div (se usi la seconda opzione nell'HTML) */
+/* .immagine-sfondo {
+  width: 80vw; /* Imposta la larghezza in base alla viewport (puoi regolarla) */
+  height: auto;
+  background-image: url('percorso/dell/immagine.jpg');
+  background-repeat: no-repeat;
+  background-size: contain; /* Scala l'immagine per adattarsi completamente */
+  background-position: center; /* Centra l'immagine di sfondo */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  padding-bottom: calc(80vw * (height / width)); /* Mantiene le proporzioni - Sostituisci height e width */
+} */

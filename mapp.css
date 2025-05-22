@@ -1,0 +1,72 @@
+* {
+    cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+}
+
+body, html {
+    margin: 0; /* Rimuove margini di default */
+    padding: 0; /* Rimuove padding di default */
+    height: 100%; /* Assicura che il corpo e l'html occupino tutto lo schermo */
+	 overflow-y: hidden;
+}
+
+/* Contenitore della mappa */
+.map-container {
+    position: relative;
+    width: 100vw;  /* Larghezza al 100% della finestra */
+    height: 100vh; /* Altezza al 100% della finestra */
+}
+.map-container img {
+    width: 100%;   /* L'immagine occuperà tutta la larghezza disponibile */
+    height: 100%; /* Cambia 99.4% in 100% */
+}
+/* Stile per le aree di testo sopra l'immagine */
+.area {
+    position: absolute;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semitrasparente */
+    border-radius: 5px;
+	text-decoration:none;
+    font-size: 16px;
+    cursor: pointer;
+	font-family: 'New Rocker';
+	transition: transform 0.3s ease; /* Transizione fluida per l'effetto di ingrandimento */
+    transform-origin: center center; /* Ingrandisce l'elemento dal suo centro */
+}
+
+/* Aumenta le dimensioni al passaggio del mouse */
+.area:hover {
+    transform: scale(1.2); /* Ingrandisce l'elemento al 120% */
+}
+
+
+
+/* Posizioni specifiche per ogni area */
+.area1 { 
+    top: 480px; 
+    left: 470px; 
+}
+
+.area2 { 
+    top: 370px; 
+    left: 530px; 
+}
+
+.area3 { 
+    top: 250px; 
+    left: 460px; 
+}
+.area4 { 
+    top: 220px; 
+    left: 650px; 
+}
+
+.area5 { 
+    top: 250px; 
+    left: 870px; 
+}
+
+.area6 {
+	top: 400px;
+	left: 870px;
+}

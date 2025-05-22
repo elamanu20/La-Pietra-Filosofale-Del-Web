@@ -1,0 +1,108 @@
+* {
+    cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+}
+
+
+body {
+  background-image: url("https://wallpapercave.com/wp/wp11646300.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+    background-attachment: scroll;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+    padding: 30px;
+  
+}
+
+
+nav {
+    position: fixed; /* Rende il menu fisso in alto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-trasparente */
+    padding: 10px 20px; /* Padding per il menu */
+    z-index: 1000; /* Mantiene il menu sopra altri elementi */
+}
+
+nav ul {
+    list-style-type: none; /* Rimuove i punti dalla lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Dispone gli elementi in orizzontale */
+	justify-content: center;
+	 flex-wrap: wrap;
+}
+
+nav li {
+    margin-right: 50px; /* Spazio tra gli elementi del menu */
+    color: white; /* Colore del testo */
+    font-family: 'New Rocker';
+}
+
+nav li.active {
+    font-weight: bold; /* Evidenzia la voce attiva */
+	color: darkmagenta;
+}
+
+nav a {
+    color: white; /* Colore dei link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+	cursor: url('https://cur.cursors-4u.net/others/oth-3/oth256.cur'), auto;
+}
+
+nav a:hover {
+    cursor: url('https://cur.cursors-4u.net/others/oth-3/oth256.cur'), auto; /* Cursore diverso al passaggio del mouse */
+}
+
+h2 {
+	color: moccasin;
+	text-align: left;
+	margin-bottom:10px 0;
+	font-family: 'New Rocker';
+	font-size: 41px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.question p {
+    color: mistyrose; /* Colore del testo per le domande */
+    font-family: 'New Rocker'; /* Font personalizzato, se lo desideri */
+    font-size: 20px; /* Dimensione del font */
+}
+
+.question label {
+    color: white; /* Colore del testo per le risposte */
+    font-family: Arial, sans-serif; /* Font per le risposte */
+    font-size: 16px; /* Dimensione del font per le risposte */
+}
+
+/* Pulsante */
+.button {
+    background-color: navajowhite; /* Colore di sfondo del pulsante */
+    color: darkmagenta; /* Colore del testo del pulsante */
+    padding: 10px 20px; /* Padding del pulsante */
+    border: none; /* Rimuove il bordo */
+    border-radius: 5px; /* Rende gli angoli del pulsante arrotondati */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+	transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 20px;
+}
+
+.button:hover {
+    background-color: mediumorchid; /* Colore di sfondo al passaggio del mouse */
+	transform: translateY(-2px);
+}
+
+.correct-answer {
+    color: #00ff00 !important;
+    font-weight: bold;
+	text-decoration: underline;
+}
+.wrong-answer {
+    color: red !important;
+    text-decoration: line-through;
+}

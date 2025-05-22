@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title> La Pietra Filosofale del Web </title>
+	
+	
+	<link rel="stylesheet" href="primotest.css">
+	<link rel="stylesheet" href="audio.css">
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+	<style>
+        .result {
+            color: moccasin; /* Cambia il colore a tuo piacimento */
+            font-size: 50px; /* Modifica la dimensione del font se necessario */
+            margin-top: 20px; /* Aggiungi margine superiore per distanziare dal quiz */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+        <ul>
+            <li> <a href="index.html"> Home</a></li>
+            <li><a href="Lezioni.html">Lezioni</a></li>
+           <li><a href="pozioni.html">Pozioni</a></li>
+        </ul>
+</nav>
+
+<audio autoplay controls loop>
+    <source src="testmusic.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+        <h2>Quinto Test </h2>
+        <div id="quiz">
+		 <form id="quiz-form">
+        <!-- Domande -->
+        <div class="question">
+            <p>1. Qual è lo scopo principale di un Cercatore?</p>
+            <label><input type="radio" name="q1" value="a"> Segnare con la Pluffa</label><br>
+            <label><input type="radio" name="q1" value="b"> Catturare il Boccino d'Oro</label><br>
+            <label><input type="radio" name="q1" value="c"> Difendere i cerchi</label><br>
+            <label><input type="radio" name="q1" value="d"> Deviare i Bolidi</label>
+        </div>
+
+        <div class="question">
+            <p>2. Quanti punti vale la cattura del Boccino?</p>
+            <label><input type="radio" name="q2" value="a"> 10 punti</label><br>
+            <label><input type="radio" name="q2" value="b"> 50 punti</label><br>
+            <label><input type="radio" name="q2" value="c"> 150 punti</label><br>
+            <label><input type="radio" name="q2" value="d"> 200 punti</label>
+        </div>
+
+        <div class="question">
+            <p>3. Quanti giocatori ci sono in una squadra di Quidditch?</p>
+            <label><input type="radio" name="q3" value="a"> 5</label><br>
+            <label><input type="radio" name="q3" value="b"> 6</label><br>
+            <label><input type="radio" name="q3" value="c"> 7</label><br>
+            <label><input type="radio" name="q3" value="d"> 8</label>
+        </div>
+
+        <div class="question">
+            <p>4. Qual è il ruolo dei Battitori?</p>
+            <label><input type="radio" name="q4" value="a"> Segnare con la Pluffa</label><br>
+            <label><input type="radio" name="q4" value="b"> Difendere i cercatori</label><br>
+            <label><input type="radio" name="q4" value="c"> Deviare i Bolidi</label><br>
+            <label><input type="radio" name="q4" value="d"> Cercare il Boccino</label>
+        </div>
+		
+		<div class="question">
+            <p>5. Dove si dice sia nato il Quidditch?</p>
+            <label><input type="radio" name="q5" value="a"> A Hogsmeade</label><br>
+            <label><input type="radio" name="q5" value="b"> Nella palude di Queerditch </label><br>
+            <label><input type="radio" name="q5" value="c"> A Diagon Alley</label><br>
+            <label><input type="radio" name="q5" value="d"> Nella Foresta Proibita</label>
+        </div>
+
+
+        <!-- Pulsante per calcolare il risultato -->
+        <button class="button" type= "button" onclick="checkAnswers(event)">Invia le Risposte</button>
+		</form>
+    </div>
+
+    <!-- Risultato -->
+    <div id="result" class="result"></div>
+	<button id="continue-button" class="button" style="display: none;" onclick="window.location.href='secondoanno.html'">FINE PRIMO ANNO</button>
+
+    <script src="quintotest.js"></script>
+            
+
+</body>
+
+</html>

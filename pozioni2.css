@@ -1,0 +1,26 @@
+#menu-fisso {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Rende lo sfondo trasparente */
+  padding: 10px 0;
+  text-align: center;
+}
+
+#menu-fisso ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-fisso li {
+  display: inline;
+  margin: 0 15px;
+}
+
+#menu-fisso a {
+  text-decoration: none;
+  color: moccasin;
+  font-family: 'New Rocker';
+}

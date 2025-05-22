@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title> La Pietra Filosofale del Web </title>
+	
+	
+	<link rel="stylesheet" href="primotest.css">
+	<link rel="stylesheet" href="audio.css">
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+	<style>
+        .result {
+            color: moccasin; /* Cambia il colore a tuo piacimento */
+            font-size: 50px; /* Modifica la dimensione del font se necessario */
+            margin-top: 20px; /* Aggiungi margine superiore per distanziare dal quiz */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+        <ul>
+            <li> <a href="index.html"> Home</a></li>
+            <li><a href="provamappaaa.html">Mappa Interattiva</a></li>
+            <li><a href="pozioni.html">Pozioni</a></li>
+        </ul>
+</nav>
+
+<audio autoplay controls loop>
+    <source src="testmusic.mp3" type="audio/mp3">
+ </audio>
+ 
+<div class="container">
+        <h2>Primo Test </h2>
+        <div id="quiz">
+		 <form id="quiz-form">
+        <!-- Domande -->
+        <div class="question">
+            <p>1. Qual è l'animale che rappresenta la casata dei Grifondoro?</p>
+            <label><input type="radio" name="q1" value="a"> Leone</label><br>
+            <label><input type="radio" name="q1" value="b"> Aquila</label><br>
+            <label><input type="radio" name="q1" value="c"> Serpente</label><br>
+            <label><input type="radio" name="q1" value="d"> Tasso</label>
+        </div>
+
+        <div class="question">
+            <p>2. Chi è il fondatore della casata dei Serpeverde?</p>
+            <label><input type="radio" name="q2" value="a"> Godric</label><br>
+            <label><input type="radio" name="q2" value="b"> Salazar</label><br>
+            <label><input type="radio" name="q2" value="c"> Tosca</label><br>
+            <label><input type="radio" name="q2" value="d"> Priscilla</label>
+        </div>
+
+        <div class="question">
+            <p>3. Qual è la casata che valorizza la creatività e l'intelligenza?</p>
+            <label><input type="radio" name="q3" value="a"> Serpeverde</label><br>
+            <label><input type="radio" name="q3" value="b"> Corvonero</label><br>
+            <label><input type="radio" name="q3" value="c"> Tassorosso</label><br>
+            <label><input type="radio" name="q3" value="d"> Grifondoro</label>
+        </div>
+
+        <div class="question">
+            <p>4. Chi tra questi personaggi apparteneva a Tassorosso?</p>
+            <label><input type="radio" name="q4" value="a"> "Luna Lovegood"</label><br>
+            <label><input type="radio" name="q4" value="b"> "Cedric Diggory"</label><br>
+            <label><input type="radio" name="q4" value="c"> "Draco Malfoy"</label><br>
+            <label><input type="radio" name="q4" value="d"> "Hermione Granger"</label>
+        </div>
+		
+		<div class="question">
+            <p>5. Quali sono i colori dei Serpeverde?</p>
+            <label><input type="radio" name="q5" value="a"> "Rosso e Oro"</label><br>
+            <label><input type="radio" name="q5" value="b"> "Blu e Bronzo"</label><br>
+            <label><input type="radio" name="q5" value="c"> "Verde e Argento"</label><br>
+            <label><input type="radio" name="q5" value="d"> "Giallo Nero"</label>
+        </div>
+
+
+        <!-- Pulsante per calcolare il risultato -->
+        <button class="button" type= "button" onclick="checkAnswers(event)">Invia le Risposte</button>
+		</form>
+    </div>
+
+    <!-- Risultato -->
+    <div id="result" class="result"></div>
+	<button id="continue-button" class="button" style="display: none;" onclick="window.location.href='secondalezione.html'">Procedi alla Seconda Lezione!</button>
+
+    <script src="primotest.js"></script>
+            
+
+</body>
+
+</html>

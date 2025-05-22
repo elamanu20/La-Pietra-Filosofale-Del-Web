@@ -1,0 +1,27 @@
+audio {
+    display: block;
+    width: 20%;
+    background-color: darkmagenta;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    visibility: visible !important;
+    transform: scale(0.8);
+    overflow: hidden;
+    border-radius: 10px;
+	}
+audio::-webkit-media-controls-panel {
+    background-color: mediumorchid;
+    border-radius: 10px;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: darkmagenta;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background: mediumorchid;
+}
+
+audio::-webkit-media-controls-volume-slider:focus {
+    background: mediumorchid;
+}

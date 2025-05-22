@@ -1,0 +1,13 @@
+#personaggio {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+
+#capelli, #occhi, #vestiti {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

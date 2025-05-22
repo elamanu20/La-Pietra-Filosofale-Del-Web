@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title> La Pietra Filosofale del Web </title>
+	
+	
+	<link rel="stylesheet" href="primotest.css">
+	<link rel="stylesheet" href="audio.css">
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+	<style>
+        .result {
+            color: moccasin; /* Cambia il colore a tuo piacimento */
+            font-size: 50px; /* Modifica la dimensione del font se necessario */
+            margin-top: 20px; /* Aggiungi margine superiore per distanziare dal quiz */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+        <ul>
+            <li> <a href="index.html"> Home</a></li>
+            <li><a href="provamappaaa.html">Mappa Interattiva</a></li>
+            <li><a href="pozioni.html">Pozioni</a></li>
+        </ul>
+</nav>
+
+<audio autoplay controls loop>
+    <source src="testmusic.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+        <h2>Quarto Esame </h2>
+        <div id="quiz">
+		 <form id="quiz-form">
+        <!-- Domande -->
+        <div class="question">
+            <p>1. Qual è la bacchetta più potente mai creata?</p>
+            <label><input type="radio" name="q1" value="a"> La Bacchetta di Sambuco</label><br>
+            <label><input type="radio" name="q1" value="b"> La Bacchetta di Drago</label><br>
+            <label><input type="radio" name="q1" value="c"> La Bacchetta di Quercia</label><br>
+            <label><input type="radio" name="q1" value="d"> La Bacchetta di Fenice</label>
+        </div>
+
+        <div class="question">
+            <p>2. Che cosa fa la Pietra della Resurrezione?</p>
+            <label><input type="radio" name="q2" value="a"> Riporta completamente in vita i morti</label><br>
+            <label><input type="radio" name="q2" value="b"> Consente di parlare con le anime dei defunti</label><br>
+            <label><input type="radio" name="q2" value="c"> Concede l’immortalità al possessore</label><br>
+            <label><input type="radio" name="q2" value="d"> Trasforma il possessore in uno spirito</label>
+        </div>
+
+        <div class="question">
+            <p>3. Chi è il proprietario originale del Mantello dell’Invisibilità?</p>
+            <label><input type="radio" name="q3" value="a"> Ignotus Peverell</label><br>
+            <label><input type="radio" name="q3" value="b"> Godric Grifondoro</label><br>
+            <label><input type="radio" name="q3" value="c"> Antioch Peverell</label><br>
+            <label><input type="radio" name="q3" value="d"> Albus Silente</label>
+        </div>
+
+        <div class="question">
+            <p>4. Cosa simboleggia il Mantello dell’Invisibilità?</p>
+            <label><input type="radio" name="q4" value="a"> La ricerca del potere</label><br>
+            <label><input type="radio" name="q4" value="b"> La capacità di evitare i nemici</label><br>
+            <label><input type="radio" name="q4" value="c"> L’accettazione della mortalità</label><br>
+            <label><input type="radio" name="q4" value="d"> La fuga dalla realtà</label>
+        </div>
+		
+		<div class="question">
+            <p>5. Perché Harry non usa i Doni per diventare il Maestro della Morte?</p>
+            <label><input type="radio" name="q5" value="a"> Non conosce il loro potenziale</label><br>
+            <label><input type="radio" name="q5" value="b"> Preferisce usarli per guadagnare potere</label><br>
+            <label><input type="radio" name="q5" value="c"> Non riesce a raccoglierli tutti</label><br>
+            <label><input type="radio" name="q5" value="d"> Accetta la morte come parte della vita</label>
+        </div>
+		
+
+
+        <!-- Pulsante per calcolare il risultato -->
+        <button class="button" type= "button" onclick="checkAnswers(event)">Invia le Risposte</button>
+		</form>
+    </div>
+
+    <!-- Risultato -->
+    <div id="result" class="result"></div>
+	<button id="continue-button" class="button" style="display: none;" onclick="window.location.href='quinta2lezione.html'">Procedi alla Quinta Lezione!</button>
+
+    <script src="quarto2test.js"></script>
+            
+</body>
+
+</html>

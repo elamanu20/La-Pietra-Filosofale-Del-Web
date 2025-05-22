@@ -1,0 +1,212 @@
+* {
+    cursor: url(https://cur.cursors-4u.net/others/oth-3/oth254.cur), auto !important;
+}
+
+body {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/148/377/148/abstract-gradient-wallpaper-preview.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  padding-top: 0;
+  overflow-x: hidden;
+
+}
+nav {
+    position: fixed; /* Rende il menu fisso in alto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-trasparente */
+    padding: 10px 20px; /* Padding per il menu */
+    z-index: 1000; /* Mantiene il menu sopra altri elementi */
+}
+
+nav ul {
+    list-style-type: none; /* Rimuove i punti dalla lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Dispone gli elementi in orizzontale */
+	justify-content: center;
+}
+
+nav li {
+    margin-right: 50px; /* Spazio tra gli elementi del menu */
+    color: white; /* Colore del testo */
+    font-family: 'New Rocker';
+}
+
+nav li.active {
+	color: mistyrose;
+	pointer-events: none;
+	cursor: not-allowed;
+}
+
+nav li.active span {
+    color: moccasin; /* Colore del testo per l'elemento disabilitato */
+}
+
+nav a {
+    color: white; /* Colore dei link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+	cursor: url('https://cur.cursors-4u.net/others/oth-3/oth256.cur'), auto;
+}
+
+nav a:hover {
+    cursor: url('https://cur.cursors-4u.net/others/oth-3/oth256.cur'), auto; /* Cursore diverso al passaggio del mouse */
+}
+
+h1 {
+	color: moccasin;
+	margin: 50px auto 20px auto;
+	font-family: 'New Rocker';
+	font-size: 50px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	width: fit-content;
+	}
+	
+p {
+	font-family: 'Abhaya Libre';
+	margin: 10px auto 20px auto;
+	color: 	mistyrose;
+	font-size: 30px;
+	text-align: center;
+	width: fit-content;
+	}
+	
+img {
+    display: block;
+    margin: 0 auto;  /* Questo centra l'immagine orizzontalmente */
+	max-width: 100%;  /* Impedisce che l'immagine superi la larghezza del contenitore */
+    height: auto;
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente, se necessario */
+    width: 100%; /* Imposta la larghezza al 100% */
+	animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Ingrandisce al 110% */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ingredienti {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	overflow: hidden; /* Nascondi le card che non sono visibili */
+    width: 580px; /* Mostra solo 4 card (120px ciascuna + gap) */
+}
+
+.ingredienti-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.ingrediente-card {
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.ingrediente-card:hover {
+    transform: scale(1.1);
+    border-color: #4CAF50;
+}
+
+.ingrediente-card.selected {
+    transform: scale(1.2); /* Aumenta la dimensione della card */
+    border-color: #4CAF50; /* Mantiene il bordo verde quando selezionato */
+}
+
+.immagineIngrediente {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.risultato {
+    margin-top: 20px;
+}
+
+.risultato img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}

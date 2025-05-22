@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title> La Pietra Filosofale del Web </title>
+	
+	<link rel="stylesheet" href="pozioni3.css">
+	
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+</head>
+
+<body>
+<nav>
+        <ul>
+            <li> <a href="index.html"> Home</a></li>
+            <li> <a href="provamappaaa.html">Mappa Interattiva</a></li>
+            <li class="active"><span>Pozioni</span></li>
+        </ul>
+</nav>
+
+    <div class="container">
+        <h1>Crea la tua Pozione Magica</h1>
+
+        <div class="ingredienti">
+            <h2>Scegli gli ingredienti:</h2>
+            <div class="carousel">
+                <button class="prev" id="prevBtn">&lt;</button>
+                <div class="ingredienti-container" id="ingredientiContainer">
+                    <div class="ingrediente-card" data-nome="Bucaneve" data-immagine="bucaneve.jpg">
+                        <img src="Immagini\bucaneve.png" alt="Bucaneve" class="immagineIngrediente">
+                        <p>Bucaneve</p>
+                    </div>
+					
+					<div class="ingrediente-card" data-nome="Petali di Rosa" data-immagine="petali_di_rosa.jpg">
+                        <img src="Immagini/petali.png" alt="Petali di Rosa" class="immagineIngrediente">
+                        <p>Petali di Rosa </p>
+                    </div>
+					
+                    <div class="ingrediente-card" data-nome="Salvia" data-immagine="salvia.jpg">
+                        <img src="Immagini\salvia.png" alt="Salvia" class="immagineIngrediente">
+                        <p>Salvia</p>
+                    </div>
+					
+					<div class="ingrediente-card" data-nome="Alchemilla" data-immagine="alchemilla.png">
+                        <img src="Immagini/alchemilla.png" alt="Alchemilla" class="immagineIngrediente">
+                        <p>Alchemilla </p>
+                    </div>
+					
+					<div class="ingrediente-card" data-nome="Uova di Ashwinder" data-immagine="uova_di_ashwinder.png">
+                        <img src="Immagini/uova.png" alt="Uova di Ashwinder" class="immagineIngrediente">
+                        <p>Uova di Ashwinder </p>
+                    </div>
+					
+                    <div class="ingrediente-card" data-nome="Mandragola" data-immagine="fiori_di_mandragola.png">
+                        <img src="Immagini\mandragola.png" alt="Mandragola" class="immagineIngrediente">
+                        <p>Mandragola</p>
+                    </div>
+					
+                     <div class="ingrediente-card" data-nome="Unicorno" data-immagine="Unicorno.png">
+                        <img src="Immagini/Unicorno.png" alt="Unicorno" class="immagineIngrediente">
+                        <p>Unicorno</p>
+                    </div>
+					
+					<div class="ingrediente-card" data-nome="Assenzio" data-immagine="assenzio.png">
+                        <img src="Immagini/assenzio.png" alt="Assenzio" class="immagineIngrediente">
+                        <p>Assenzio </p>
+                    </div>
+					
+					<div class="ingrediente-card" data-nome="Zenzero" data-immagine="zenzero.png">
+                        <img src="Immagini/zenzero.png" alt="Zenzero" class="immagineIngrediente">
+                        <p>Zenzero </p>
+                    </div>
+					
+					<div class="ingrediente-card" data-nome="Peperoncino in Polvere" data-immagine="peperoncino.png">
+                        <img src="Immagini/peperoncino.png" alt="Peperoncino in Polvere" class="immagineIngrediente">
+                        <p>Peperoncino in Polvere </p>
+                    </div>
+					
+					<div class="ingrediente-card" data-nome="Acqua di Luna" data-immagine="moon_water.png">
+                        <img src="Immagini/moon-water.png" alt="Acqua di Luna" class="immagineIngrediente">
+                        <p>Acqua di Luna </p>
+                    </div>
+					
+					<div class="ingrediente-card" data-nome="Piume di Jobberknoll" data-immagine="Piuma.WEBP">
+                        <img src="Immagini/Piuma.WEBP" alt="Piume di Jobberknoll" class="immagineIngrediente">
+                        <p>Piume di Jobberknoll </p>
+                    </div>
+					
+					<div class="ingrediente-card" data-nome="Fata" data-immagine="fata.png">
+                        <img src="Immagini/fata.png" alt="Fata" class="immagineIngrediente">
+                        <p>Fata</p>
+                    </div>
+					
+                </div>
+                <button class="next" id="nextBtn">&gt;</button>
+            </div>
+        </div>
+<button id="toggleRicettario">Ricettario</button>
+<div id="ricettario" style="display: none;">
+    <h2>Prova queste combinazioni!</h2>
+    <ul>
+        <li>-Acqua di Luna, Peperoncino in Polvere, Petali di Rosa, Uova di Ashwinder</li>
+        <li>-Assenzio, Mandragola, Unicorno</li>
+        <li>-Bucaneve, Mandragola, Piume di Jobberknoll, Salvia</li>
+        <li>-Alchemilla, Fata, Petali di Rosa, Unicorno, Zenzero</li>
+		<li>-Polvere di Fenice, Ruggine di Drago</li>
+        </ul>
+</div>
+        <button id="creaPozioneBtn">Crea Pozione</button>
+
+        <div class="risultato">
+            <h2>La tua Pozione:</h2>
+            <div id="risultatoPozione">Nessuna pozione ancora creata.</div>
+        </div>
+    </div>
+
+    <script src="pozioni.js"></script>
+</body>
+</html>

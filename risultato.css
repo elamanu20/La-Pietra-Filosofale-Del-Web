@@ -1,0 +1,131 @@
+* {
+    cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+}
+
+
+body {
+  background-image: url("https://wallpapercat.com/w/full/a/2/f/740620-2560x1440-desktop-hd-hogwarts-crest-wallpaper-photo.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  padding-top: 200px;
+  text-align:center;
+}
+
+audio {
+    visibility: visible;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+
+.audio-player {
+    display: block;
+    margin-top: 30px;
+    width: 300px;
+    background-color: darkmagenta;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+
+
+nav {
+    position: fixed; /* Rende il menu fisso in alto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-trasparente */
+    padding: 10px 20px; /* Padding per il menu */
+    z-index: 1000; /* Mantiene il menu sopra altri elementi */
+}
+
+nav ul {
+    list-style-type: none; /* Rimuove i punti dalla lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Dispone gli elementi in orizzontale */
+	justify-content: center;
+}
+
+nav li {
+    margin-right: 50px; /* Spazio tra gli elementi del menu */
+    color: white; /* Colore del testo */
+    font-family: 'New Rocker';
+}
+
+nav li.active {
+    font-weight: bold; /* Evidenzia la voce attiva */
+	color: darkmagenta;
+}
+
+nav a {
+    color: white; /* Colore dei link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+	cursor: url('https://cur.cursors-4u.net/others/oth-3/oth256.cur'), auto;
+}
+
+nav a:hover {
+    cursor: url('https://cur.cursors-4u.net/others/oth-3/oth256.cur'), auto; /* Cursore diverso al passaggio del mouse */
+}
+
+h1 {
+	color: darkmagenta;
+	text-align: left;
+	margin-bottom:20px;
+	margin-left:0;
+	font-family: 'New Rocker';
+	font-size: 50px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.house-name {
+    font-size: 2em; /* Dimensione del font */
+	text-align: center;
+    font-family: 'Alfa Slab One'; /* Font personalizzato */
+    color: mediumorchid; /* Colore del testo */
+    margin-top: 20px; /* Margine superiore */
+	margin-left:70px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold; /* Testo in grassetto */
+    text-decoration: underline; /* Sottolineatura del testo */
+}
+
+
+.container {
+    display: flex; /* Usa flexbox per il contenitore del bottone */
+	 flex-direction: column;
+    justify-content: center; /* Centra il bottone orizzontalmente */
+	align-items: center;
+    width: 100%;
+	margin-left: 30px;
+}
+
+.bottone {
+    display: inline-block;
+     width: 105px; /* Imposta la larghezza desiderata */
+    padding: 15px;
+    font-size: 16px;
+    background-color: darkmagenta;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+	transition: background-color 0.3s, transform 0.2s;
+	cursor: pointer;
+	 margin-top: 50px;
+}
+
+.bottone:hover {
+    background-color: mediumorchid;
+	transform: scale(1.05);
+}
+

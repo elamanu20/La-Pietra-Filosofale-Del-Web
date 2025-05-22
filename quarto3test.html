@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title> La Pietra Filosofale del Web </title>
+	
+	
+	<link rel="stylesheet" href="primotest.css">
+	<link rel="stylesheet" href="audio.css">
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+	<style>
+        .result {
+            color: moccasin; /* Cambia il colore a tuo piacimento */
+            font-size: 50px; /* Modifica la dimensione del font se necessario */
+            margin-top: 20px; /* Aggiungi margine superiore per distanziare dal quiz */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+        <ul>
+            <li> <a href="index.html"> Home</a></li>
+            <li><a href="provamappaaa.html">Mappa Interattiva</a></li>
+           <li><a href="pozioni.html">Pozioni</a></li>
+        </ul>
+</nav>
+
+<audio autoplay controls loop>
+    <source src="testmusic.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+        <h2>Quarto Esame </h2>
+        <div id="quiz">
+		 <form id="quiz-form">
+        <!-- Domande -->
+        <div class="question">
+            <p>1. Chi fu Gellert Grindelwald?</p>
+            <label><input type="radio" name="q1" value="a"> Il fondatore di Hogwarts</label><br>
+            <label><input type="radio" name="q1" value="b"> Il padre di Harry Potter</label><br>
+            <label><input type="radio" name="q1" value="c"> Un membro dell’Ordine della Fenice</label><br>
+            <label><input type="radio" name="q1" value="d"> Un mago oscuro che desiderava dominare il mondo magico e muggle</label>
+        </div>
+
+        <div class="question">
+            <p>2. Come si incontrarono Gellert Grindelwald e Albus Silente?</p>
+            <label><input type="radio" name="q2" value="a"> Durante un duello a Hogwarts</label><br>
+            <label><input type="radio" name="q2" value="b"> Quando entrambi erano giovani e studiavano a Godric’s Hollow</label><br>
+            <label><input type="radio" name="q2" value="c"> In una battaglia contro Voldemort</label><br>
+            <label><input type="radio" name="q2" value="d"> A Durmstrang</label>
+        </div>
+
+        <div class="question">
+            <p>3. Per quale motivo si separarono Gellert Grindelwald e Albus Silente?</p>
+            <label><input type="radio" name="q3" value="a"> Per divergenze ideologiche e la tragedia che coinvolse il fratello di Silente, Aberforth</label><br>
+            <label><input type="radio" name="q3" value="b"> Per la competizione nella scuola di magia</label><br>
+            <label><input type="radio" name="q3" value="c"> Per il tradimento di Grindelwald</label><br>
+            <label><input type="radio" name="q3" value="d"> Per divergenze di opinioni su Harry Potter</label>
+        </div>
+
+        <div class="question">
+            <p>4. Cosa accadde tra Silente e Grindelwald nel 1945?</p>
+            <label><input type="radio" name="q4" value="a"> Si allearono per combattere Voldemort</label><br>
+            <label><input type="radio" name="q4" value="b"> Ebbero una battaglia che culminò con la sconfitta di Grindelwald da parte di Silente</label><br>
+            <label><input type="radio" name="q4" value="c"> Si ritirarono dalla lotta per il potere</label><br>
+            <label><input type="radio" name="q4" value="d"> Grindelwald divenne alleato di Silente</label>
+        </div>
+		
+		<div class="question">
+            <p>5. Cosa rappresenta l’incontro finale tra Albus Silente e Gellert Grindelwald nella saga?</p>
+            <label><input type="radio" name="q5" value="a"> La riconciliazione dei due maghi</label><br>
+            <label><input type="radio" name="q5" value="b"> La fine dell’odio tra i maghi oscuri</label><br>
+            <label><input type="radio" name="q5" value="c"> Un confronto sul loro passato e sulle scelte che li hanno separati</label><br>
+            <label><input type="radio" name="q5" value="d"> La distruzione della bacchetta di Sambuco
+</label>
+        </div>
+		
+
+
+        <!-- Pulsante per calcolare il risultato -->
+        <button class="button" type= "button" onclick="checkAnswers(event)">Invia le Risposte</button>
+		</form>
+    </div>
+
+    <!-- Risultato -->
+    <div id="result" class="result"></div>
+	<button id="continue-button" class="button" style="display: none;" onclick="window.location.href='quinta3lezione.html'">Procedi alla Quinta Lezione</button>
+
+    <script src="quarto3test.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title> La Pietra Filosofale del Web </title>
+	
+	<link rel="stylesheet" href="introduzione.css">
+	<link rel="stylesheet" href="testcasata2.css">
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+</head>
+
+<body>
+
+<nav>
+        <ul>
+            <li> <a href="index.html"> Home</a></li>
+            <li><a href="provamappaaa.html">Mappa Interattiva</a></li>
+            <li><a href="pozioni.html">Pozioni</a></li>
+        </ul>
+</nav>
+<div class="container">
+        <h2>Test di Smistamento </h2>
+        <div id="quiz">
+        <!-- Domande -->
+        <div class="question">
+            <p>1. Quale qualità ti rappresenta di più?</p>
+            <label><input type="radio" name="q1" value="Grifondoro"> Coraggio</label><br>
+            <label><input type="radio" name="q1" value="Serpeverde"> Ambizione</label><br>
+            <label><input type="radio" name="q1" value="Corvonero"> Curiosità</label><br>
+            <label><input type="radio" name="q1" value="Tassorosso"> Lealtà</label>
+        </div>
+
+        <div class="question">
+            <p>2. Come ti comporti quando ti trovi davanti a un problema?</p>
+            <label><input type="radio" name="q2" value="Grifondoro"> Lo affronto senza paura</label><br>
+            <label><input type="radio" name="q2" value="Serpeverde"> Trovo un modo creativo per superarlo</label><br>
+            <label><input type="radio" name="q2" value="Corvonero"> Studio tutte le opzioni possibili</label><br>
+            <label><input type="radio" name="q2" value="Tassorosso"> Cerco aiuto e lavoro in squadra</label>
+        </div>
+
+        <div class="question">
+            <p>3. Quale delle seguenti materie ti appassiona di più?</p>
+            <label><input type="radio" name="q3" value="Grifondoro"> Difesa contro le Arti Oscure</label><br>
+            <label><input type="radio" name="q3" value="Serpeverde"> Pozioni</label><br>
+            <label><input type="radio" name="q3" value="Corvonero"> Trasfigurazione</label><br>
+            <label><input type="radio" name="q3" value="Tassorosso"> Cura delle Creature Magiche</label>
+        </div>
+
+        <div class="question">
+            <p>4. Quale frase ti ispira di più?</p>
+            <label><input type="radio" name="q4" value="Grifondoro"> "Affronta ogni sfida con coraggio"</label><br>
+            <label><input type="radio" name="q4" value="Serpeverde"> "Fai tutto il possibile per raggiungere i tuoi sogni"</label><br>
+            <label><input type="radio" name="q4" value="Corvonero"> "La conoscenza è il potere"</label><br>
+            <label><input type="radio" name="q4" value="Tassorosso"> "Nessuno è lasciato indietro"</label>
+        </div>
+
+        <div class="question">
+            <p>5. In un’avventura, quale ruolo prenderesti?</p>
+            <label><input type="radio" name="q5" value="Grifondoro"> Il leader che guida il gruppo</label><br>
+            <label><input type="radio" name="q5" value="Serpeverde"> Il pianificatore strategico</label><br>
+            <label><input type="radio" name="q5" value="Corvonero"> L'esperto che conosce ogni dettaglio</label><br>
+            <label><input type="radio" name="q5" value="Tassorosso"> L'amico che sostiene tutti</label>
+        </div>
+
+        <!-- Pulsante per calcolare il risultato -->
+        <button class="button" onclick="calculateResult()">Scopri la tua Casa</button>
+    </div>
+
+    <!-- Risultato -->
+    <div id="result" class="result"></div>
+
+
+    <script src="testcasata.js"></script>
+            
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title> La Pietra Filosofale del Web </title>
+	
+	
+	<link rel="stylesheet" href="primotest.css">
+	<link rel="stylesheet" href="audio.css">
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+	<style>
+        .result {
+            color: moccasin; /* Cambia il colore a tuo piacimento */
+            font-size: 50px; /* Modifica la dimensione del font se necessario */
+            margin-top: 20px; /* Aggiungi margine superiore per distanziare dal quiz */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+        <ul>
+            <li> <a href="index.html"> Home</a></li>
+            <li><a href="provamappaaa.html">Mappa Interattiva</a></li>
+           <li><a href="pozioni.html">Pozioni</a></li>
+        </ul>
+</nav>
+
+<audio autoplay controls loop>
+    <source src="testmusic.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+        <h2>Secondo Esame </h2>
+        <div id="quiz">
+		 <form id="quiz-form">
+        <!-- Domande -->
+        <div class="question">
+            <p>1. Come nasce il legame tra Harry e Voldemort?</p>
+            <label><input type="radio" name="q1" value="a"> Attraverso la Profezia e il sacrificio di Lily Potter</label><br>
+            <label><input type="radio" name="q1" value="b"> Quando Voldemort sceglie Neville come nemesi</label><br>
+            <label><input type="radio" name="q1" value="c"> Grazie a un incantesimo lanciato da Silente</label><br>
+            <label><input type="radio" name="q1" value="d"> Dopo la distruzione della Bacchetta di Sambuco</label>
+        </div>
+
+        <div class="question">
+            <p>2. Cosa permette a Harry di parlare il serpentese?</p>
+            <label><input type="radio" name="q2" value="a"> La sua connessione con Nagini</label><br>
+            <label><input type="radio" name="q2" value="b"> Il frammento dell’anima di Voldemort dentro di lui</label><br>
+            <label><input type="radio" name="q2" value="c"> Un incantesimo imparato a Hogwarts</label><br>
+            <label><input type="radio" name="q2" value="d"> Il potere della Bacchetta di Sambuco</label>
+        </div>
+
+        <div class="question">
+            <p>3. Perché Harry deve sacrificarsi per sconfiggere Voldemort?</p>
+            <label><input type="radio" name="q3" value="a"> Per distruggere il frammento della sua anima</label><br>
+            <label><input type="radio" name="q3" value="b"> Per fermare Nagini</label><br>
+            <label><input type="radio" name="q3" value="c"> Per attivare i Doni della Morte</label><br>
+            <label><input type="radio" name="q3" value="d"> Per proteggere la scuola di Hogwarts</label>
+        </div>
+
+        <div class="question">
+            <p>4. Da cosa viene salvato Harry quando Voldemort lo colpisce nella Foresta Proibita?</p>
+            <label><input type="radio" name="q4" value="a"> Dall’intervento di Silente</label><br>
+            <label><input type="radio" name="q4" value="b"> Dalla protezione di Lily Potter e la Bacchetta di Sambuco</label><br>
+            <label><input type="radio" name="q4" value="c"> Dal sacrificio di Neville</label><br>
+            <label><input type="radio" name="q4" value="d"> Da un incantesimo lanciato da Ron</label>
+        </div>
+		
+		<div class="question">
+            <p>5. Cosa rappresenta il legame tra Harry e Voldemort?</p>
+            <label><input type="radio" name="q5" value="a"> Il trionfo della morte</label><br>
+            <label><input type="radio" name="q5" value="b"> Il peso del destino e l’importanza delle scelte</label><br>
+            <label><input type="radio" name="q5" value="c"> L’inevitabilità della distruzione reciproca</label><br>
+            <label><input type="radio" name="q5" value="d"> Il potere della magia oscura</label>
+        </div>
+		
+
+
+        <!-- Pulsante per calcolare il risultato -->
+        <button class="button" type= "button" onclick="checkAnswers(event)">Invia le Risposte</button>
+		</form>
+    </div>
+
+    <!-- Risultato -->
+    <div id="result" class="result"></div>
+	<button id="continue-button" class="button" style="display: none;" onclick="window.location.href='terza3lezione.html'">Procedi alla Terza Lezione</button>
+
+    <script src="secondo3test.js"></script>
+
+</body>
+
+</html>

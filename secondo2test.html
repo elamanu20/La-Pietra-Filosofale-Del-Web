@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title> La Pietra Filosofale del Web </title>
+	
+	
+	<link rel="stylesheet" href="primotest.css">
+	<link rel="stylesheet" href="audio.css">
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM02E6I2ijQiIYvti3UgLmme4U2gpjQsy1A&s" type="image/x-icon">
+	<style>
+        .result {
+            color: moccasin; /* Cambia il colore a tuo piacimento */
+            font-size: 50px; /* Modifica la dimensione del font se necessario */
+            margin-top: 20px; /* Aggiungi margine superiore per distanziare dal quiz */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+        <ul>
+            <li> <a href="index.html"> Home</a></li>
+            <li><a href="provamappaaa.html">Mappa Interattiva</a></li>
+           <li><a href="pozioni.html">Pozioni</a></li>
+        </ul>
+</nav>
+
+<audio autoplay controls loop>
+    <source src="testmusic.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+        <h2>Secondo Esame </h2>
+        <div id="quiz">
+		 <form id="quiz-form">
+        <!-- Domande -->
+        <div class="question">
+            <p>1. Qual è l’origine della Bacchetta di Sambuco?</p>
+            <label><input type="radio" name="q1" value="a">  Creata da Godric Grifondoro</label><br>
+            <label><input type="radio" name="q1" value="b"> Parte dei Doni della Morte</label><br>
+            <label><input type="radio" name="q1" value="c"> Forgiata dai goblin</label><br>
+            <label><input type="radio" name="q1" value="d"> Appartenuta a Salazar Serpeverde</label>
+        </div>
+
+        <div class="question">
+            <p>2. Chi ha distrutto la Coppa di Tosca Tassorosso?</p>
+            <label><input type="radio" name="q2" value="a"> Harry Potter</label><br>
+            <label><input type="radio" name="q2" value="b"> Ron Weasley</label><br>
+            <label><input type="radio" name="q2" value="c"> Hermione Granger</label><br>
+            <label><input type="radio" name="q2" value="d"> Neville Paciock</label>
+        </div>
+
+        <div class="question">
+            <p>3. Quale oggetto aumenta la saggezza di chi lo indossa?</p>
+            <label><input type="radio" name="q3" value="a"> Il Diadema di Corvonero</label><br>
+            <label><input type="radio" name="q3" value="b"> Il Mantello dell’Invisibilità</label><br>
+            <label><input type="radio" name="q3" value="c">  La Giratempo</label><br>
+            <label><input type="radio" name="q3" value="d"> La Spada di Grifondoro</label>
+        </div>
+
+        <div class="question">
+            <p>4. Che cosa fa il Pensatoio?</p>
+            <label><input type="radio" name="q4" value="a">  Rende invisibile chi lo usa</label><br>
+            <label><input type="radio" name="q4" value="b"> Permette di distruggere gli Horcrux</label><br>
+            <label><input type="radio" name="q4" value="c"> Conserva e analizza i ricordi</label><br>
+            <label><input type="radio" name="q4" value="d"> Permette di viaggiare nel tempo</label>
+        </div>
+		
+		<div class="question">
+            <p>5. Chi ha usato la Spada di Grifondoro per uccidere Nagini?</p>
+            <label><input type="radio" name="q5" value="a"> Hermione Granger</label><br>
+            <label><input type="radio" name="q5" value="b"> Neville Paciock </label><br>
+            <label><input type="radio" name="q5" value="c"> Harry Potter</label><br>
+            <label><input type="radio" name="q5" value="d">  Ron Weasley</label>
+        </div>
+		
+		<div class="question">
+            <p>6. Qual è la particolarità del Mantello dell’Invisibilità?</p>
+            <label><input type="radio" name="q5" value="a"> Rende chi lo indossa immune agli incantesimi</label><br>
+            <label><input type="radio" name="q5" value="b"> È uno dei Doni della Morte e non si deteriora nel tempo </label><br>
+            <label><input type="radio" name="q5" value="c"> Aumenta la forza fisica di chi lo indossa</label><br>
+            <label><input type="radio" name="q5" value="d"> Permette di viaggiare nel tempo</label>
+        </div>
+
+
+        <!-- Pulsante per calcolare il risultato -->
+        <button class="button" type= "button" onclick="checkAnswers(event)">Invia le Risposte</button>
+		</form>
+    </div>
+
+    <!-- Risultato -->
+    <div id="result" class="result"></div>
+	<button id="continue-button" class="button" style="display: none;" onclick="window.location.href='terza2lezione.html'">Procedi alla Terza Lezione!</button>
+
+    <script src="secondo2test.js"></script>
+            
+
+</body>
+
+</html>

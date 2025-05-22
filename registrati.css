@@ -1,0 +1,32 @@
+body {
+    font-family: 'New Rocker';
+    text-align: left;
+    margin-top: 50px;
+	display: flex; /* Usa flexbox */
+    flex-direction: column; /* Disposizione in colonna */
+    align-items: flex-start; /* Allinea al centro orizzontalmente */
+}
+
+.container {
+    display: flex; /* Usa flexbox per il contenitore del bottone */
+    justify-content: center; /* Centra il bottone orizzontalmente */
+    width: 100%;
+	margin-left:150px;
+
+}
+
+.bottone {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: darkmagenta;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.bottone:hover {
+    background-color: mediumorchid;
+	transform: scale(1.05);
+}

@@ -1,0 +1,96 @@
+* {
+    cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+}
+
+body {
+    background-image: url("sfondomappa.jpg");
+    background-attachment: fixed;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    min-height: 90vh;
+    padding-top: 50px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    font-family: 'New Rocker';
+}
+
+h1 {
+    color: darkmagenta;
+    margin-bottom: 10px;
+    font-family: 'New Rocker';
+    font-size: 50px;
+	margin-left: 120px;
+	margin-top:100px;
+	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7), -2px -2px 4px rgba(255, 255, 255, 0.7);
+}
+
+p { 
+    font-family: 'Alfa Slab One';
+    color: darkviolet;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 20px;
+	margin-left: 180px;
+	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7), -2px -2px 4px rgba(255, 255, 255, 0.7);
+}
+
+audio {
+    display: block;
+    margin-top: 260px;
+    width: 20%;
+    background-color: darkmagenta;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    visibility: visible !important;
+    transform: scale(0.8);
+    overflow: hidden;
+    border-radius: 10px;
+	margin-left: 277px;
+}
+
+/* Personalizza la barra di avanzamento (progress) */
+audio::-webkit-media-controls-panel {
+    background-color: mediumorchid;
+    border-radius: 10px;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: darkmagenta;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background: mediumorchid;
+}
+
+audio::-webkit-media-controls-volume-slider:focus {
+    background: mediumorchid;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; 
+    width: 100%;
+    margin-top: 20px; /* Distanza tra il testo e il bottone */
+}
+
+.bottone {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: darkmagenta;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 330px; /* Distanza tra il bottone e il bordo sinistro */
+}
+
+.bottone:hover {
+    background-color: mediumorchid;
+    transform: scale(1.05);
+}
+

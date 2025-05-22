@@ -1,0 +1,71 @@
+body {
+    font-family: 'New Rocker';
+    text-align: left;
+    margin-top: 50px;
+	display: flex; /* Usa flexbox */
+    flex-direction: column; /* Disposizione in colonna */
+    align-items: center; /* Allinea al centro orizzontalmente */
+}
+
+.container {
+    display: flex; /* Usa flexbox per il contenitore del bottone */
+    justify-content: flex-start; /* Centra il bottone orizzontalmente */
+    width: 100%;
+	margin-left: 30px;
+}
+
+.bottone {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: navajowhite;
+    color: darkmagenta;
+    text-decoration: none;
+    border-radius: 5px;
+	transition: background-color 0.3s, transform 0.2s;
+	margin-top:10px;
+}
+
+.bottone:hover {
+    background-color: mistyrose;
+	transform: scale(1.05);
+}
+/* Esempio per il bottone "Avanti" */
+#avanti {
+  background-color: navajowhite; 
+  color: darkmagenta;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#avanti:hover {
+  background-color: mistyrose; 
+}
+
+/* Esempio per il bottone "Indietro" */
+#indietro {
+  background-color: navajowhite;
+  color: darkmagenta;
+  padding:  10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+#indietro:hover {
+  background-color: mistyrose;
+}
